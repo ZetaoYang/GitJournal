@@ -2,6 +2,13 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 
+pluginManagement {
+    repositories {
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
 include ':app'
 
 def flutterProjectRoot = rootProject.projectDir.parentFile.toPath()
