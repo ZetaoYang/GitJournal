@@ -22,14 +22,15 @@ class AppConfig extends ChangeNotifier {
   // Properties
   //
   var onBoardingCompleted = false;
-  var collectCrashReports = true;
+  var collectCrashReports = false;
 
   int version = 0;
 
   DateTime? proExpirationDate;
   bool get proMode {
-    if (proExpirationDate == null) return false;
-    return DateTime.now().isBefore(proExpirationDate!);
+    // if (proExpirationDate == null) return false;
+    // return DateTime.now().isBefore(proExpirationDate!);
+    return true;
   }
 
   var validateProMode = true;
